@@ -1,0 +1,27 @@
+name: Aware Super MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official hosted or local MCP server from Aware Super was found, and no candidate tool list
+  could be derived because the provider publishes no OpenAPI or other API contract. Aware Super
+  (aware.com.au) is an Australian superannuation fund with member, employer and adviser web
+  services but no public developer portal.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+tools: []
+evidence:
+- url: https://aware.com.au/mcp
+  status: 403
+  note: pre-flight probe; control path also 403, so the edge rejects before routing (opaque, not evidence of a server)
+- url: https://aware.com.au/.well-known/mcp.json
+  status: 406
+- url: https://aware.com.au/.well-known/mcp/server-card.json
+  status: 406
+- url: https://aware.com.au/llms.txt
+  status: 404
+- search: '"Aware Super" MCP server OR API developer'
+  result: no Aware Super MCP server or developer API found

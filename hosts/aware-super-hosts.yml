@@ -1,0 +1,100 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 5
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: aware.com.au
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - ChangeLog
+  - GettingStarted
+  - Website
+  - Support
+  - Newsroom
+  - Security
+  - TermsOfService
+  - PrivacyPolicy
+  - SignUp
+  - Login
+  serves:
+  - docs
+  - cdn
+  vendor: fastly
+  registrable_domain: aware.com.au
+  role: website
+  relation: own
+- host: forms.aware.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aware.com.au
+  role: other
+  relation: own
+- host: join.aware.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aware.com.au
+  role: other
+  relation: own
+- host: memberonline.aware.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aware.com.au
+  role: other
+  relation: own
+- host: register.aware.com.au
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: aware.com.au
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform

@@ -1,23 +1,90 @@
 aid: aware-super
+
 name: Aware Super
-description: 'Aware Super is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Aware Super is a leading Australian industry superannuation fund trusted by over 1.2 million
+  members to help grow their retirement savings. Its site at aware.com.au serves members, employers and
+  financial advisers with super accounts, retirement income products, investment options, financial advice
+  and online member services. Surfaced via the API Evangelist harvest backlog (source australia-apidays-2026);
+  no public developer portal or API documentation was found on its site.
+
 url: https://raw.githubusercontent.com/api-evangelist/aware-super/refs/heads/main/apis.yml
+
+image: https://aware.com.au/member.thumb.800.480.png
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Superannuation
+- Retirement
+- Financial Services
+- Investments
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aware-super-hosts.yml
+- type: IntegrationEdges
+  url: integrations/aware-super-integration-edges.yml
+- type: Vendors
+  url: vendors/aware-super-vendors.yml
+- type: ChangeLog
+  url: https://aware.com.au/member/learn/events/whats-new
+- type: GettingStarted
+  url: https://aware.com.au/employer/campaign/employer-onboarding-hub
+- type: DomainSecurity
+  url: security/aware-super-domain-security.yml
 - type: Website
   url: https://aware.com.au/
+- type: Support
+  url: https://aware.com.au/member/contact-aware-super
+- type: Newsroom
+  url: https://aware.com.au/member/about-us/newsroom
+- type: Security
+  url: https://aware.com.au/member/about-us/security
+- type: TermsOfService
+  url: https://aware.com.au/member/about-us/legal/conditions-of-use
+- type: PrivacyPolicy
+  url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance
+- type: SignUp
+  url: https://aware.com.au/member/register
+- type: Login
+  url: https://aware.com.au/member/login
+- type: LinkedIn
+  url: https://www.linkedin.com/company/awaresuper/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified by title "Aware Super - Australian Superannuation Fund"; no developer portal, API docs or GitHub org found on the site or in its sitemap.
+  evidence:
+  - url: https://aware.com.au/
+    status: 200
+  - url: https://aware.com.au/sitemap.xml
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

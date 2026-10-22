@@ -1,0 +1,79 @@
+generated: '2026-10-22'
+method: searched
+source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+note: >-
+  Read from Aware Super's own privacy policy ("Last updated: December 2025"), cookie policy, terms and
+  conditions and security page, all fetched 2026-10-22 with HTTP 200. Aware Super is an Australian
+  superannuation fund; its privacy posture is framed by the Privacy Act 1988 (Cth), with OAIC and AFCA
+  named as escalation bodies. No accessibility statement, transparency report, named subprocessor list
+  or Global Privacy Control language was found on these pages.
+signals:
+  data_subject_request:
+    url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+    section: Access to and correction of your information
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner (OAIC); Australian Financial Complaints Authority (AFCA)
+    evidence:
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "You have a right to know what personal information we hold about you and to access it or correct it."
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "The easiest way to correct your personal information is to log into your account online and update your personal details. You can also send us a hardcopy form or call us. For some updates, such as a change of name, we need you to supply supporting documentation."
+    note: >-
+      Access and correction rights under Australian privacy law, self-service for correction through the
+      member account. No deletion or portability right is named and no response timeframe is stated.
+  data_residency:
+    url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+    section: Storing personal information overseas
+    regions_named: [United States, United Kingdom, EU]
+    evidence:
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "In some cases, we engage third parties to host electronic data (including data in relation to the services we provide) on our behalf. These data warehouses may be located overseas including the United States, the United Kingdom, and the EU."
+    note: >-
+      A disclosure that data MAY be held outside Australia, not a residency guarantee. The policy adds that
+      overseas recipients are subject to "appropriate contractual obligations"; no customer choice of region is offered.
+  data_retention:
+    url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+    section: Retaining Personal Information
+    evidence:
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "We aim to keep the personal information only for as long as we need it for business requirements and to comply with regulatory obligations. When it is no longer needed for these purposes, we destroy or de-identify this personal information as soon as practicable."
+    note: A purpose-bound retention principle with destroy-or-de-identify at end of life; no concrete retention periods are published.
+  ai_transparency:
+    url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+    section: Disclosure of Personal Information
+    evidence:
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "our service providers (which may include data hosting or document management companies, IT service providers, marketing and research companies, or other advisers (including those that use artificial intelligence systems or algorithms);"
+    note: >-
+      A narrow disclosure that personal information may go to service providers that use AI systems or
+      algorithms. It does not describe Aware Super's own use of AI, automated decision-making, or any AI-interaction notice.
+  subprocessors:
+    url: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+    section: Disclosure of Personal Information
+    list_published: false
+    evidence:
+    - source: https://aware.com.au/member/about-us/legal/conditions-of-use/privacy-and-governance/aware-super-privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "If we disclose your personal information to service providers that perform business activities for us, they may only use your personal information for the specific purpose for which we do disclose it to them."
+    note: Service-provider categories and a purpose limitation are stated; no named subprocessor list is published.
+  incident_notification:
+    url: https://aware.com.au/member/about-us/security
+    evidence:
+    - source: https://aware.com.au/member/about-us/security
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: "Making sure your personal details are correct is important because if a privacy breach does occur we want to be able to contact you as soon as possible, confirm your identity and quickly manage the security risk."
+    note: >-
+      An expressed intent to contact members promptly after a privacy breach, on the member security page.
+      It is not a formal notification commitment and states no timeframe.
