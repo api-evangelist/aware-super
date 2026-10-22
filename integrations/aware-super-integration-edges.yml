@@ -1,0 +1,85 @@
+generated: '2026-10-22'
+method: searched
+source:
+- https://aware.com.au/member/join/superapi-documents
+- https://zapier.com/apps/aware-super/integrations
+- https://n8n.io/integrations/aware-super/
+- https://composio.dev/toolkits/aware-super
+- https://monid.ai/tools/aware-super
+checked:
+- https://aware.com.au/sitemap.xml
+- https://aware.com.au/member/join/superapi-documents
+- https://aware.com.au/content/dam/ftc/digital/pdfs/member/support/Aware-Super-Important-Information-SuperAPI.pdf
+- https://aware.com.au/member/about-us/corporate-governance/service-partners
+- https://composio.dev/toolkits/aware-super
+- https://monid.ai/tools/aware-super
+- https://n8n.io/integrations/aware-super/
+- https://zapier.com/apps/aware-super/integrations
+- https://data.gov.au/data/dataset/asic-afs-licensee
+- https://data.gov.au/data/dataset/asic-credit-licensee
+- https://www.apra.gov.au/register-of-authorised-deposit-taking-institutions
+- https://www.apra.gov.au/registers/list-registered-general-insurers
+summary: Aware Super publishes no developer API or integrations directory. The one integration it documents is its
+  placement on SuperAPI's employee-onboarding super-selection panel, where SuperAPI passes member details to Aware
+  Super to verify an existing account or create a new one. The service-partners page lists outsourced business providers
+  (TAL Life as insurer and a table of investment managers). These are financial-services relationships, not software
+  or API integrations, so they are not recorded as edges.
+marketplace_apps: []
+edges:
+- partner_name: SuperAPI
+  partner: null
+  type: claimed
+  direction: third-party
+  relationship: distribution-channel
+  evidence: https://aware.com.au/content/dam/ftc/digital/pdfs/member/support/Aware-Super-Important-Information-SuperAPI.pdf
+  evidence_quote: Aware Super has an agreement with SuperAPI Pty Ltd to feature on the panel of advertised funds
+    within SuperAPI's super selection screen.
+  note: SuperAPI shares information the employee provides with the employer (for onboarding) and with Aware Super
+    (to verify whether the person already holds an account or to create a new one). Aware Super pays SuperAPI a
+    variable administrative platform fee. The source is the Important Information PDF dated 1 May 2025, linked from
+    the SuperAPI documents page. No SuperAPI provider exists in the catalog.
+- partner_name: ASIC Australian Financial Services licensees
+  partner: null
+  partner_match: register-name
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://data.gov.au/data/dataset/ab7eddce-84df-4098-bc8f-500d0d9776d1/resource/d98a113d-6b50-40e6-b65f-2612efc877f4/download/afs_lic_202610.csv
+  category: Australian financial services licence (ASIC)
+  contract_reference:
+    register: ASIC Australian Financial Services licensees
+    spec_file: null
+    standard: null
+    role: afs-licensee
+    registrations:
+    - registered_name: AWARE SUPER PTY LTD
+      licences:
+      - AFS licence
+      - deposit and payment products
+      - life products
+      - derivatives
+      - foreign exchange contracts
+      - securities
+      - superannuation
+      - interests in managed investment schemes
+      register_country: AU
+      matched_domain: null
+      matched_by: register-name
+      register_id: AFSL 293340
+      abn_acn: '11118202672'
+      state: NSW
+      start: 03/02/2006
+      register_name_note: 'register-name ''awaresuper'' = aware-super; no wikidata P856; AU presence: Australia
+        tag'
+    signal_note: 'participation only: a regulator licence / authorisation listing; no API conformance is published
+      by this register'
+    detected_by: sweep-australia-afs-adi-registers.py
+    detected: '2026-10-22'
+    matched_by: register-name
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-australia-afs-adi-registers.py
+  first_seen: '2026-10-22'
+templates: []
